@@ -7,8 +7,15 @@ class Dragon {
   }
 
   eat() {
-    
+    if(this.hungry === true){
+      console.log('hungry status:', this.hungry);
+      this.hungry = false;
+      console.log('hungry status:', this.hungry);
+    }
   }
 }
+
+// var dragon = new Dragon('Lady Vox');
+// dragon.eat();
 
 module.exports = Dragon;

@@ -4,9 +4,12 @@ function Vampire(name, pet, thirsty) {
   this.thirsty = thirsty || true;
 }
 
-Vampire.prototype.drink = () => {
-  return this.thirsty = false;
+Vampire.prototype.drink = function() {
+  if(this.thirsty === true) {
+    console.log('thirsty status:', this.thirsty);
+    this.thirsty = false;
+    console.log('thirsty status:', this.thirsty);
+  }
 };
-
 
 module.exports = Vampire;

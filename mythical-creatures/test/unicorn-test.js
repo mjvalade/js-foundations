@@ -1,3 +1,5 @@
+/* globals describe, it */
+
 var assert = require('chai').assert;
 var Unicorn = require('../exercises/unicorn');
 

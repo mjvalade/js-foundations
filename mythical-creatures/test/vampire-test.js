@@ -1,3 +1,4 @@
+/* globals describe, it */
 var assert = require('chai').assert;
 var Vampire = require('../exercises/vampire');
 
