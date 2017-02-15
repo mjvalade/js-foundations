@@ -4,18 +4,19 @@ class Dragon {
     this.rider = rider;
     this.color = color;
     this.hungry = true;
+    this.hungryCount = 0;
   }
 
   eat() {
-    if(this.hungry === true){
+    if(this.hungryCount < 3){
+      this.hungryCount++;
       console.log('hungry status:', this.hungry);
+    }
+    if(this.hungryCount === 3){
       this.hungry = false;
       console.log('hungry status:', this.hungry);
     }
   }
 }
-
-// var dragon = new Dragon('Lady Vox');
-// dragon.eat();
 
 module.exports = Dragon;
